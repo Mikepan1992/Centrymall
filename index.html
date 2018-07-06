@@ -35,7 +35,18 @@
                 color: #ccc;
                 cursor: pointer;
            }
-       
+           header{
+                height: 32px;
+               line-height: 32px;
+               background: #f7f7f7;
+               width: 100%
+           }
+       .top{margin:0 auto; width: 1200px;}
+       .login-left{margin-left: 10px}
+       .login-right{margin-right: 12px;}
+       .login-right a:first-child{color:red}
+
+         
        
        </style>
        
@@ -47,24 +58,41 @@
                 <div id="close-ad">x</div>
             </div>
         <!-- 头部广告结束 -->
-       <div class="main">
-           <header>
 
-           </header>
+        <!-- top部分开始 -->
+        <header>
             
+            <div class="top">
+                <div class="login-left fl">
+                    <span>欢迎来到世纪商城 ,  <a href="##">[ 登录 ]</a><a href="##">[ 免费注册 ]</a></span>
+                </div>
+                <div class="login-right fr">
+                        &nbsp;&nbsp;
+                    <a href="##">VIP俱乐部</a>
+                    &nbsp;|&nbsp;
+                    <a href="##">我的订单</a>
+                    &nbsp;|&nbsp;
+                    <a href="##">客服中心</a>
+                    &nbsp;|&nbsp;
+                    <a href="##">网站导航</a>
+                </div>
+            </div>
+ 
 
+        </header>
+       <!-- top部分结束 -->
+
+       <!-- 搜索栏开始 -->
+       <div class="search-nav">
+           
        </div>
-       
+
+        <!-- 搜索栏结束 -->
 
 
        
    </body>
-   <script>
-       var closeAd=document.getElementById("#close-ad")
-
-       console.log(closeAd)
-       closeAd.onclik=function(){this.style.display="none"}
-   </script>
+   
    
    </html>            
 
