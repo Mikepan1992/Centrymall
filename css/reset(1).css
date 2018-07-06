@@ -1,0 +1,27 @@
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img,span,input,table,a{ margin:0; padding:0; }
+img { border:none; }
+em,i{ font-style:normal; }
+h1,h2,h3,h4,h5,b,strong{ font-weight:normal; }
+ul li, ol li{ list-style:none; } 
+body { color:#333; font:12px "微软雅黑","Arial Narrow",HELVETICA; }
+a { color:#666; text-decoration:none; }
+input{ outline:none;}
+a:hover { color:#f30; }
+.fl{float: left;}
+.fr{float: right;}
+ .clearfix::after {
+            content: ".";
+            clear: both;
+            display: block;
+            overflow: hidden;
+            font-size: 0;
+            height: 0;
+            visibility: hidden;
+                  }
+
+  .clearfix {
+            zoom: 1;
+        }
+
+

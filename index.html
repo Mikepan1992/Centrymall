@@ -1,0 +1,72 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>首页</title>
+       <link rel="stylesheet" href="css/reset(1).css">
+       <style>
+           .main{width: 1200px;margin:0 auto;}
+           body{height: 2000px}
+           
+           .headads{
+               height: 80px；
+               font-size:0
+              
+               }
+           .headads img{
+               
+               height: 80px;
+               width: 100%;
+               display: block
+
+               
+           }
+           #close-ad{
+                width: 20px;
+                height: 20px;
+                background: #000;
+                position: absolute;
+                top: 0;right: 40px;
+                font-size: 18px;
+                text-align: center;
+                line-height: 20px;
+                color: #ccc;
+                cursor: pointer;
+           }
+       
+       
+       </style>
+       
+   </head>
+   <body>
+       <!-- 头部广告开始 -->
+        <div class="headads">
+                <a href="##"><img src="img/dudu_top.jpg" alt=""></a>
+                <div id="close-ad">x</div>
+            </div>
+        <!-- 头部广告结束 -->
+       <div class="main">
+           <header>
+
+           </header>
+            
+
+       </div>
+       
+
+
+       
+   </body>
+   <script>
+       var closeAd=document.getElementById("#close-ad")
+
+       console.log(closeAd)
+       closeAd.onclik=function(){this.style.display="none"}
+   </script>
+   
+   </html>            
+
+
+
