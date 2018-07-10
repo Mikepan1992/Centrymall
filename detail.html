@@ -69,7 +69,7 @@
        background: #F9F9F9;
         line-height: 22px;
         padding: 20px 0 10px 0;
-        border: 1px solid red;
+       
 
 
     }
@@ -88,7 +88,7 @@
         width: 454px;
         height: 600px;
         overflow: hidden;
-        border: 1px solid red;
+       
         
 
     }
@@ -97,7 +97,7 @@
         height: 500px;
         float: left;
         margin-left: 50px;
-        border: 1px solid green;
+     
        
     }
     .middlebox{
@@ -183,19 +183,48 @@
         height: 40px;
         line-height: 40px;
     }
+    .buycount{
+        height: 30px;
+        line-height: 30px;
+    }
     .buycount a{
        border: 1px solid #D9D9D9;
        width:22px;
        height: 22px;
        outline: none;
+       display: block;
+       font-size: 16px;
+       text-align: center;
+       line-height: 22px;
+       float: left
+      
     }
     .buycount input{
         width: 38px;
         height: 22px;
-       
         text-align: center;
-        box-sizing: content-box;
+        border: none;
+        border-bottom:  1px solid #D9D9D9;
+        border-top:  1px solid #D9D9D9;
+        float: left;
        
+    }
+    .buycount span{
+        float: left;
+        margin-right: 30px;
+    }
+    .addshopcart a{
+       width: 133px;
+       height: 36px;
+       line-height: 36px;
+       float: left;
+       background: red;
+       text-align: center;
+       color: #Fff;
+       font-size: 14px;
+       font-weight: 900;
+       margin-right: 20px;
+       margin-top: 30px;
     }
 
     </style>
@@ -345,9 +374,11 @@
                      <li style="color: red">普通商品，满88元包邮</li>
                      <li>已&nbsp;&nbsp;销&nbsp;&nbsp;售：65件</li>
                      <li style="color: #DB0303">跨境商品视为海外购买，暂不支持开发票</li>
-                     <li class="buycount">购买数量:
-                         <a href="##">-</a><input type="text"><a href="##">+</a>
+                     <li class="buycount"><span>购买数量:</span>
+                         <a href="##">-</a><input type="text" value="1"><a href="##">+</a>
                      </li>
+                    
+                     <li class="addshopcart "><a href="##">加入购物车</a><a href="##">加关注</a></li>
                  </ul>
 
                </div>
