@@ -523,7 +523,10 @@
                 var t = ev.clientY - $('.middlebox')[0].offsetTop - $('.filter')[0].offsetHeight / 2;
 
                 //    如果页面滚动那么要加上一个滚动高度，因为不滚动的时候滚动距离是0，所以默认给它加上也没关系
-                t = t + document.documentElement.scrollTop;
+                if(document.documentElement.scrollTop){
+                    t = t + document.documentElement.scrollTop;
+                }
+               
                 //  console.log(l,t)
 
                 var maxL = $('.middlebox')[0].clientWidth - $('.filter')[0].offsetWidth;

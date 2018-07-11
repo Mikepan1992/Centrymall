@@ -181,8 +181,8 @@
 
               <!-- 特卖开始 -->
               <section class="activity-list">
-                  <ul>
-                      <li>
+                   <ul>
+                      <!-- <li>
                           <a href="##">   
                                   <p class="activity-item-title">限期特卖</p>
                                   <p class="activity-item-divider">正品低价，必买清单</p>
@@ -214,8 +214,8 @@
                                      <img src="http://www.sjgo365.com/Content/newhome/images/normalAct01.png"/>
                              </a>
                              <p class="notebanner">正品低价，必买清单</p>
-                      </li>
-                  </ul>
+                      </li> -->
+                  </ul> 
                      
                      
                      
@@ -1328,6 +1328,7 @@
      </div>
 
      <script src="js/jquery.js"></script>
+     <script src="obj.js"></script>
      <script >
          
      var fade=(function () {
@@ -1425,8 +1426,24 @@
        })
       })();
       
-     
-     
+
+
+     var activityli=$('.activity-list>ul');
+     var str='';
+     for(var i=0;i<activity.length;i++){
+         str += `
+         <li>
+                          <a href="##">   
+                                  <p class="activity-item-title">${activity[i]['tiltle']}</p>
+                                  <p class="activity-item-divider"> ${activity[i]['subtitle']}</p>
+                                  <img src= ${activity[i]['imglink']}/>
+                                  
+                          </a>
+                          <p class="notebanner">正品低价，必买清单</p>
+                      </li>
+         `
+     }
+     activityli.append(str);
      
      
      </script>
