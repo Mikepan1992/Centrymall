@@ -81,7 +81,7 @@
         height: 600px;
         padding-left: 20px;
         background: #F9F9F9;
-        position: relative;
+        
     }
     .ProductImageList{
         float: left;
@@ -113,23 +113,31 @@
         width: 454px;
         height: 454px;
         z-index: 10;
-       display: none;
-        left: 480px;
-        top:0;
+        left: 600px;
+        top:320px;
         border: 1px solid #000;
+        overflow: hidden;
+        display: none;
+
+    }
+    .largebox img{
+        width:908px;
+        height: 908px;
+        position: absolute;
     }
     .middlebox img{
-        width: 100%;
-        height: 100%;
+        width:454px;
+        height:454px;
     }
     .filter{
-        width: 237px;
-        height: 237px;
+        width: 227px;
+        height: 227px;
         position: absolute;
         background: #000;
         opacity: .5;
         left: 0;
         top:0;
+        display: none;
 
     }
     .smallbox{
@@ -345,7 +353,7 @@
            <!-- 放大镜上面的商品链条结束 -->
            <!-- 放大镜和右边内容区域开始 -->
            <div class="fdjmain">
-                <div class="largebox"></div>
+                <div class="largebox"><img src="http://img.sjgo365.com/ProductImage450/27366920.jpg"></div>
                <div class="ProductImageList">
                   
                    <div class="middlebox">
@@ -354,10 +362,10 @@
                      
                    </div>
                    <ul class="smallbox">
-                       <li><img src="http://img.sjgo365.com/ProductImage80/27366920.jpg" alt=""></li>
-                       <li><img src="http://img.sjgo365.com/ProductImage80/1_27366920.jpg" alt=""></li>
-                       <li><img src="http://img.sjgo365.com/ProductImage80/2_27366920.jpg" alt=""></li>
-                       <li><img src="http://img.sjgo365.com/ProductImage80/3_27366920.jpg" alt=""></li>
+                       <li><img src="http://img.sjgo365.com/ProductImage80/27366920.jpg"   data-middle="http://img.sjgo365.com/ProductImage450/27366920.jpg"></li>
+                       <li><img src="http://img.sjgo365.com/ProductImage80/1_27366920.jpg"  data-middle="http://img.sjgo365.com/ProductImage450/27366920.jpg"></li>
+                       <li><img src="http://img.sjgo365.com/ProductImage80/2_27366920.jpg"  data-middle="http://img.sjgo365.com/ProductImage450/27366920.jpg"></li>
+                       <li><img src="http://img.sjgo365.com/ProductImage80/3_27366920.jpg"  data-middle="http://img.sjgo365.com/ProductImage80/3_27366920.jpg"></li>
                    </ul>
 
                </div>
@@ -480,7 +488,7 @@
 
 
             </section>
-
+        
 
 
 
@@ -492,6 +500,63 @@
 
 
      </div>
+     <script src="js/jquery.js"></script>
+     <script>
+
+        //    首先给每一个小盒子加事件然后获取自定义属性赋值给中盒子大盒子
+            $('.smallbox>li').on('click', function () {
+
+                var durl = $(this).find('img').attr('data-middle')
+                $('.middlebox').find('img').attr('src', durl)
+                $('.largebox').find('img').attr('src', durl)
+
+
+            })
+            //  拖动三剑客，这里可以链式调用哦！！！注意转jQuery元素为dom元素
+            $('.middlebox').mouseover(function () {
+                $('.largebox').show();
+                $('.filter').show();
+
+            }).mousemove(function (ev) {
+                ev = ev || window.event;
+                var l = ev.clientX - $('.middlebox')[0].offsetLeft - $('.filter')[0].offsetWidth / 2;
+                var t = ev.clientY - $('.middlebox')[0].offsetTop - $('.filter')[0].offsetHeight / 2;
+
+                //    如果页面滚动那么要加上一个滚动高度，因为不滚动的时候滚动距离是0，所以默认给它加上也没关系
+                t = t + document.documentElement.scrollTop;
+                //  console.log(l,t)
+
+                var maxL = $('.middlebox')[0].clientWidth - $('.filter')[0].offsetWidth;
+                var maxT = $('.middlebox')[0].clientHeight - $('.filter')[0].offsetHeight;
+                //边界处理
+                if (l > maxL) {
+                    l = maxL
+                } else if (l < 0) {
+                    l = 0
+                }
+                if (t > maxT) {
+                    t = maxT
+                } else if (t < 0) {
+                    t = 0
+                }
+
+                // 移动小盒子
+                $('.filter')[0].style.left = l + 'px'
+                $('.filter')[0].style.top = t + 'px'
+                // 移动大图片
+                $('.largebox').find('img')[0].style.left = -2 * l + 'px'
+                $('.largebox').find('img')[0].style.top = -2 * t + 'px'
+
+
+            }).mouseout(function () {
+                $('.largebox').hide();
+                $('.filter').hide();
+            })
+              
+
+
+
+     </script>
     
 </body>
 </html>

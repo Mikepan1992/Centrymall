@@ -1,0 +1,598 @@
+.main{width: 1200px;margin:0 auto;}
+body{height: 2000px}
+/* 头部样式开始 */
+.headads{
+    height: 80px；
+    font-size: 0;
+   
+    }
+
+.headads img{
+    
+    height: 80px;
+    width: 100%;
+    display: block
+
+    
+}
+#close-ad{
+     width: 20px;
+     height: 20px;
+     background: #000;
+     position: absolute;
+     top: 0;right: 40px;
+     font-size: 18px;
+     text-align: center;
+     line-height: 20px;
+     color: #ccc;
+     cursor: pointer;
+}
+header{
+     height: 32px;
+    line-height: 32px;
+    background: #f7f7f7;
+    width: 100%
+}
+.top{margin:0 auto; width: 1200px;}
+.login-left{margin-left: 10px}
+.login-right{margin-right: 12px;}
+.login-right a:first-child{color:red}
+.search-nav{
+width: 1200px;
+height: 110px;
+margin: 0 auto;
+position: relative;
+}
+.logo{
+position: absolute;
+width: 343px;
+height: 75px;
+top:18px;
+background: url(http://www.sjgo365.com/Content/themes/base/img/headtitle.png) ;
+background-repeat: no-repeat;
+
+
+}
+.logo a{display: block;width: 255px;height: 73px;}
+.searcharea{
+width: 504px;
+height: 70px;
+position: absolute;
+top:27px;
+left: 370px;
+
+
+}
+.searcharea-input{width: 500px;height: 36px;border:2px solid #e6423b;position: relative }
+.text-search{
+border: 0;
+font-size: 14px;
+position: relative;
+left: 5px;
+line-height: 30px;
+outline: none;
+top: 3px;
+width: 410px;
+height: 30px;
+}
+.btnprosearch{
+width: 80px;
+height: 36px;
+position: absolute;
+right: 0;
+top:0;
+border-left:  1px solid #d6581b;
+background: url(http://www.sjgo365.com/Content/themes/base/img/headFoot.png);
+background-position: 0 -73px;
+}
+.searchkey{
+color:#727171;
+height: 30px;
+line-height: 30px;
+padding-left: 10px;
+width: 480px;
+position: relative;
+
+}
+.seachmymall{
+height: 25px;
+width: 100px;
+right: 180px;
+top: 44px;
+position: absolute;
+
+}
+.seachmymall i{
+height: 16px;
+width: 18px;
+display: block;
+position: absolute;
+background: url(http://www.sjgo365.com/Content/themes/base/img/icon.gif);
+
+}
+.seachmymall span{
+position: absolute;
+left: 30px;
+font-size: 12px;
+
+}
+.seachmymall em{
+background-position: 0 -16px;
+position: absolute;
+height: 7px;
+right: 4px;
+top: 5px;
+width: 9px;
+background: url(http://www.sjgo365.com/Content/themes/base/img/icon.gif);
+display: block;
+
+}
+.headcart{
+width: 120px;
+height: 20px;
+position: absolute;
+right: 0;
+top: 44px;
+
+}
+.headcart i{
+position: absolute;
+background: url(http://www.sjgo365.com/Content/themes/base/img/icon.gif);
+width: 22px;
+height: 16px;
+background-position: -18px 0;
+}
+.headcart .coutcart{
+position: absolute;
+left: 30px;
+}
+.headcart .tocart{
+position: absolute;
+left: 68px;
+}
+.headcart em{
+position: absolute;
+height: 7px;
+width:9px;
+right: 0px;
+top:5px;
+background-position: 0 -20px;
+background:url(http://www.sjgo365.com/Content/themes/base/img/icon.gif);
+}
+/* 导航栏样式开始 */
+nav{
+height: 38px;
+width: 1200px;
+margin: 0 auto;
+
+}
+nav .navbar li{
+float: left;
+line-height: 38px;
+padding:0 20px;
+font-size: 14px;
+font-weight: bold;
+position: relative
+}
+nav .navbar li:first-child a{
+color:#fff;
+display: block;
+width: 200px;
+line-height: 38px;
+margin:0 -20px;
+text-align: center;
+font-size: 16px;
+background-color: #f61e3d;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+
+}
+.leftbarlist{
+position: absolute;
+top: 100%;
+left: 0;
+background: rgba(73,44,48, 1);
+width: 200px;
+height: 400px;
+z-index: 10;
+
+
+
+}
+/* 轮播图部分样式 */
+nav .navbar .banner-login{
+width: 200px;
+height: 38px;
+float: right;
+
+
+}
+.banner-loginbox{
+position: absolute;
+top: 100%;
+left: 40px;
+height: 400px;
+width: 200px;
+background: #fff6f6;
+z-index: 10;
+
+}
+
+
+.banner{
+height: 400px;
+width: 100%;
+background: rgb(129, 153, 196);
+position: relative;
+
+}
+.imgbox li{
+    position: absolute;
+    width: 100%;
+    
+    
+}
+.imgbox li img{
+   width:100%;
+   height: 400px;
+  
+}
+.banner .uubox{
+  position: absolute;
+  left: 42%;
+  bottom: 0;
+  
+}
+.banner .uubox a{
+    display: block;
+    width: 26px;
+    height: 4px;
+    border-radius: 2px;
+    float: left;
+    background: #ffffff;
+    margin: 15px 10px;
+
+}
+.arrowleft,.arrowright{
+    position: absolute;
+    top: 172px;
+    left: 50%;
+   font-size: 36px;
+   line-height: 56px;
+   width: 34px;
+   height: 56px;
+    text-align: center;           
+    z-index: 20px;
+    background:#000;
+    color: #fff;
+    opacity: .2;
+    display: none;
+
+}
+
+.banner .arrowleft{margin-left: -390px;}
+.banner .arrowright{margin-left: 360px;}
+
+.realproduct-tip{
+height: 44px;
+}
+.standard-icon-item li{
+line-height: 44px;
+float: left;
+font-size: 12px;
+margin: 0 10px;
+color:#999;
+
+}
+
+
+
+.activity-list{
+height: 350px;
+
+margin-bottom: 20px;
+}
+
+.activity-list ul li{
+width: 245px;
+height: 310px;
+padding: 20px;
+margin-right: 20px;
+float: left;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+.activity-list ul li:first-child{background: rgb(238, 229, 215)}
+.activity-list ul li:nth-child(2){background: rgb(200, 223, 229)}
+.activity-list ul li:nth-child(3){background:rgb(199, 212, 231)}
+.activity-list ul li:nth-child(4){background: rgb(221, 217, 240)}
+.activity-list ul li a{
+width: 100%;
+height: 100%;
+display: block;
+
+}
+.activity-list ul li:last-child{margin-right: 0}
+.activity-item-title{
+height: 36px;
+line-height: 36px;
+font-size: 24px;
+text-align: center;
+color: #000;
+
+}
+.activity-item-divider{
+height: 24px;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000;
+}
+.activity-list ul li img{
+position: relative;
+width: 180px;
+height: 180px;
+transition: all .6s;
+margin-top: 40px;
+}
+
+.activity-list ul li a:hover img{transform: scale(1.1)}
+
+.floor-wrap{
+
+width: 1200px;
+
+}
+/* 美妆馆标题 */
+.floor-title{
+height: 32px;
+line-height: 32px;
+color: #333;
+font-size: 20px;
+font-weight: bold;
+
+}
+/* 美妆馆商品列表样式 */
+.floor-content{
+height: 521px;
+padding-top: 2px;
+margin-bottom: 15px;
+box-sizing: border-box;
+}
+
+/* 美妆馆左边盒子入口处样式 */
+.floor-entry{
+width: 201px;
+height: 519px;
+position: relative;
+float: left;
+position: relative;
+
+}
+.entry-header{
+width: 100%;
+height: 175px;
+padding-left: 20px;
+
+}
+.entry-header P{
+padding-top:40px;
+font-size: 30px;
+line-height: 1.4;
+font-weight: bold;
+color: #fff;
+
+}
+.entry-header a{
+font-size: 14px;
+padding:3px 10px;
+font-weight: bold;
+line-height: 3;
+border-radius: 25px;
+background: #fff;
+color:rgb(242, 97, 128)
+
+}
+.floor-entryimg{
+position: absolute;
+width: 200px;
+height: 200px;
+bottom: 0;
+right: 0;
+
+}
+/* 具体项目商品列表样式 */
+.floor-product-list{
+float: right;
+width: 999px;
+height: 519px;
+background: #eee;
+
+}
+
+.floor-product-list li{
+float: left;
+width: 199px;
+height: 259px;
+margin-right: 1px;
+background: #fff;
+}
+.floor-product-list li:nth-child(5n){margin-right: 0}
+.floor-product-list li a{
+display: block;
+padding: 20px;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+text-align: center;
+position: relative;
+
+}
+.floor-product-list li a img{
+
+width: 159px;
+height:159px;
+transition: all .6s;
+
+
+}
+.floor-product-list li a img:hover{
+  transform: scale(1.1)
+}
+.floor-product-list li a .floor-product-list-text{
+width: 100%;
+height: 36px;
+font-size: 12px;
+line-height: 1.5;
+overflow: hidden;
+margin-bottom: 5px;
+text-align: left;
+
+
+}
+.floor-product-list li a .floor-product-list-price{
+text-align: left;
+}
+.floor-product-list-price .saleprice{
+font-size: 18px;
+font-weight: bold;
+color: #f61e3d;
+}
+.floor-product-list-price .marketprice{
+font-size: 12px;
+text-decoration: line-through;
+color: #999;
+}
+/* 具体项目商品列表样式 */
+
+
+/* 具体项目商品列表下的广告条*/
+.floor-blank{
+height: 90px;
+display: block;
+margin-bottom: 20px;
+background: yellowgreen;
+}
+/* 每日必看开始 */
+.daily-title{
+font-size: 22px;
+text-align: center;
+line-height: 2;
+color: #333;
+
+}
+.title-decoration{
+position: relative;
+padding: 0 10px;
+top: -4px;
+font-size: 12px;
+color: #b6b6b6;
+}
+/* 每日必看商品列表开始 */
+.daily-product-list{
+width: 100%;
+height: 1800px;
+
+}
+.daily-product-list li{
+float: left;
+width: 232px;
+height: 290px;
+margin: 0 10px 10px 0;    
+}
+
+.daily-product-list li:nth-child(5n){
+margin-right: 0;
+}
+
+.daily-product-list li a{
+box-sizing: border-box;
+display: block;
+width: 100%;
+height: 100%;
+padding: 20px;
+position: relative;
+}
+.daily-product-list li a img{
+width:100%;
+
+
+}
+.dp-item-text{
+width: 100%;
+height: 36px;
+margin-bottom: 5px;
+line-height: 1.5;
+overflow: hidden;
+font-size: 12px;
+
+}
+.dp-sale-price{
+font-size: 18px;
+color: #f61e3d;
+font-weight: bold;
+}
+.dp-market-price{
+font-size: 12px;
+text-decoration: line-through;
+color: #999999;
+}
+/* 尾部样式开始 */
+.foot{
+border-top:1px solid #f1f1f1;
+margin-bottom: 20px;
+padding-bottom: 10px;
+margin-top: 30px;
+
+}
+.footservice{
+width:100%;
+height: 154px;
+border-bottom:1px solid #f1f1f1;
+margin-top: 25px;
+
+
+}
+
+.footservice dl{
+float: left;
+width: 240px;
+
+}
+
+.footservice dl dt{
+line-height: 30px;
+margin-left: 70px;
+}
+.footservice dl dd{
+margin-left:50px;
+
+
+}
+.footservice dl dd ul li{
+line-height: 20px;
+margin-left: 35px;
+
+
+}
+.copyright{
+margin-top: 10px;
+text-align: center;
+line-height: 25px;
+color: #333;
+
+}
+.copyrightimg{
+text-align: center;
+padding-top: 10px;
+margin-bottom: 30px;
+
+
+}
+.copyrightimg a{
+margin:0 5px;
+}
+
+/* 尾部样式结束 */
