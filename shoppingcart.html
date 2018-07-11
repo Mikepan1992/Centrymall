@@ -16,12 +16,40 @@
     .shopcart{
         margin: 0 auto;
         width: 1200px;
+        
+        border: 1px solid #cccccc;
     }
     header{height: 80px;width: 100%;}
+    .foot{
+        margin: 0 auto;
+        width: 1200px;
+        margin-top: 40px;
+    }
+    .top{
+        width: 1200px;
+        height: 104px;
+        margin: 0 auto;
+
+    }
+    .top .logoimg img{
+     float: left;
+     margin-top: 15px;
+    }
+    .top .jinduimg img{
+     float: right;
+     margin-top: 15px;
+    }
+    .top span{
+        float: left;
+        font-size: 22px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    /* 购物车样式 */
     .shopcarttitle{
         height: 48px;
         width: 100%;
-        border:1px solid red;
+       background: #efefef;
     }
     .shopcarttitle>div{
         float: left;
@@ -33,30 +61,96 @@
         position: relative;
         top: 3px;
     }
+    .shopcartcontent{
+     height: 100px;
+    }
 
     .shopcartcontent>div{
-        height: 100px;
+       
         float: left;
       
         
     }
     .cartimgbox{
         width: 160px;
+        text-align: center;
+    }
+    .cartimgbox input{
+        position: relative;
+        top:-30px;
     }
     .proname{
-        width: 330px;
+        width: 430px;
+        padding-top: 20px;
+        height:80px;
+        line-height: 20px;
     }
     .price{
         width: 120px;
+        text-align: center;
+        line-height: 100px;
     }
     .number{
-        width: 80px;
+        width: 100px;
+        text-align: center;
+        padding-top: 40px;
+        height: 70px;
+    }
+    .number a{
+        width: 22px ;
+        height: 22px;
+        float: left;
+        border: 1px solid #ccc;
+         }
+    .number input{
+        width: 38px;
+        height: 22px;
+        border:none;
+        border: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        float: left;
+        text-align: center;
     }
     .someprice{
         width: 160px;
+        text-align: center;
+        line-height: 100px;
     }
     .delbox{
         width: 100px;
+        height:100px ;
+        padding-left: 40px;
+        line-height: 100px;
+    }
+    .coutnumber{
+        margin: 0 auto;
+        width: 1200px;
+        height: 113px;
+        line-height: 113px;
+        border: 1px solid #ccc;
+        margin-top: 40px;
+    }
+    .coutnumber a{
+        width: 80px;
+        height: 113px;
+        float: right;
+        background: red;
+        text-align: center;
+        line-height: 113px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .coutnumber p{
+      height: 40px;
+      font-size: 16px;
+      float: right;
+      padding-right: 40px;
+    }
+    .coutnumber p .totalprice{
+        color: red;
+        font-size: 18px;
     }
     </style>
 
@@ -69,49 +163,67 @@
 
 <div class="main">
 <div class="top">
+    <a href="" class="logoimg"><img src="http://www.sjgo365.com/content/themes/shopping/img/logo_cart.png" alt=""></a>
+    <span>购物车</span>
+    <a href="" class="jinduimg"><img src="http://www.sjgo365.com/content/themes/shopping/img/du_cart.png" alt=""></a>
 
 </div>
 
 
 <!-- 购物车开始 -->
-<div class="shopcart">
-<div class="shopcarttitle">
-    <div class="selectall" style="width:190px ">
-        <input type="checkbox">
-        <span>全选</span>
+  <div class="shopcart">
+    <div class="shopcarttitle">
+        <div class="selectall" style="width:190px ">
+            <input type="checkbox">
+            <span>全选</span>
+
+        </div>
+        <div style="width:400px ">商品名称</div>
+        <div style="width: 120px">单价</div>
+        <div style="width: 90px">数量</div>
+        <div style="width: 160px">金额小计</div>
+        <div style="width: 120px">操作</div>
 
     </div>
-    <div style="width:400px ">商品名称</div>
-    <div style="width: 120px">单价</div>
-    <div style="width: 90px">数量</div>
-    <div style="width: 160px">金额小计</div>
-    <div style="width: 120px">操作</div>
+
+    <div class="shopcartcontent">
+        <div class="cartimgbox">
+            <input type="checkbox">
+            <a href="#3">
+                <img src="http://img.sjgo365.com/ProductImage80/24712034.jpg">
+            </a>
+        </div>
+        <div class="proname">
+            <a href="##">苏秘37度时光肌底系列礼盒6件套 呼吸时光能量套盒(时光肌底修肤水160ml+时光肌底柔肤乳130ml+时光肌底保湿紧致面霜50ml+时光肌底修肤水20ml+时光肌底柔肤乳20ml+时光肌底保湿紧致面霜10ml) </a>
+        </div>
+        <div class="price">¥475.00</div>
+        <div class="number">
+            <div class="bagbox">
+                <a href="##">-</a>
+                <input type="text" value="1">
+                <a href="##">+</a>
+            </div>
+        </div>
+        <div class="someprice">¥475.00</div>
+        <div class="delbox">
+            <a href="##">删除</a>
+        </div>
+
+    </div>
+
+
+
+
+
 
 </div>
 
-<div class="shopcartcontent">
-    <div class="cartimgbox">
-        <input type="checkbox">
-        <a href="#3"><img src="http://img.sjgo365.com/ProductImage80/24712034.jpg"></a>
+<div class="coutnumber">
+    <a href="##">结算</a>
+    <div class="totalbox">
+        <p ><span>总金额</span><span class="totalprice">￥135.00</span></p>
+    
     </div>
-    <div class="proname">
-        <a href="##">苏秘37度时光肌底系列礼盒6件套 呼吸时光能量套盒(时光肌底修肤水160ml+时光肌底柔肤乳130ml+时光肌底保湿紧致面霜50ml+时光肌底修肤水20ml+时光肌底柔肤乳20ml+时光肌底保湿紧致面霜10ml) </a>
-    </div>
-    <div class="price">¥475.00</div>
-    <div class="number">
-        <div class="bagbox">
-            <a href="##">-</a>
-            <input type="text" value="1">
-            <a href="##">+</a>
-        </div>
-    </div>
-    <div class="someprice">¥475.00</div>
-    <div class="delbox"><a href="##">删除</a></div>
-
-    </div>
-
-
-
 
 
 
@@ -124,7 +236,7 @@
 
 
                             <!-- 尾部开始 -->
-                            <section class="foot  ">
+                            <section class="foot ">
                                     <div class="footservice">
                                         <dl>
                                             <dt>新手指南</dt>
