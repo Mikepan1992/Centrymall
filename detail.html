@@ -341,19 +341,19 @@
      <div class="main">
          <!-- 放大镜上面的商品链条开始 -->
          <div class="productdetailnav ">
-             <div class="marginleft20">
+             <!-- <div class="marginleft20">
                  <a href="#3">首页</a>&nbsp;>
                  &nbsp;&nbsp;>
-                 <a href="#3">彩妆工具</a>&nbsp;>&nbsp;<a href="#3">卸妆液</a>&nbsp;>&nbsp;<a href="#3">韩国AHC 神仙水B5透明质酸/玻尿酸化妆水爽肤水 100ML（保税仓发货）</a>
+                 <a href="#3">彩妆工具</a>&nbsp;>&nbsp;<a href="#3">卸妆液</a>&nbsp;>&nbsp;<a href="#3">韩国AHC 神仙水B5透明质酸/玻尿酸化妆水爽肤水 100ML（保税仓发货）</a> -->
 
-             </div>
+             <!-- </div> -->
 
 
          </div>
            <!-- 放大镜上面的商品链条结束 -->
-           <!-- 放大镜和右边内容区域开始 -->
+            <!-- 放大镜和右边内容区域开始 -->
            <div class="fdjmain">
-                <div class="largebox"><img src="http://img.sjgo365.com/ProductImage450/27366920.jpg"></div>
+                <!-- <div class="largebox"><img src="http://img.sjgo365.com/ProductImage450/27366920.jpg"></div>
                <div class="ProductImageList">
                   
                    <div class="middlebox">
@@ -386,12 +386,12 @@
                          <a href="##">-</a><input type="text" value="1"><a href="##">+</a>
                      </li>
                     
-                     <li class="addshopcart "><a href="##">加入购物车</a><a href="##">加关注</a></li>
+                     <li class="addshopcart "><a href="shoppingcart.html">加入购物车</a><a href="##">加关注</a></li>
                  </ul>
 
-               </div>
+               </div> -->
        
-           </div>
+           </div> 
 
 
 
@@ -501,65 +501,7 @@
 
      </div>
      <script src="js/jquery.js"></script>
-     <script>
-
-        //    首先给每一个小盒子加事件然后获取自定义属性赋值给中盒子大盒子
-            $('.smallbox>li').on('click', function () {
-
-                var durl = $(this).find('img').attr('data-middle')
-                $('.middlebox').find('img').attr('src', durl)
-                $('.largebox').find('img').attr('src', durl)
-
-
-            })
-            //  拖动三剑客，这里可以链式调用哦！！！注意转jQuery元素为dom元素
-            $('.middlebox').mouseover(function () {
-                $('.largebox').show();
-                $('.filter').show();
-
-            }).mousemove(function (ev) {
-                ev = ev || window.event;
-                var l = ev.clientX - $('.middlebox')[0].offsetLeft - $('.filter')[0].offsetWidth / 2;
-                var t = ev.clientY - $('.middlebox')[0].offsetTop - $('.filter')[0].offsetHeight / 2;
-
-                //    如果页面滚动那么要加上一个滚动高度，因为不滚动的时候滚动距离是0，所以默认给它加上也没关系
-                if(document.documentElement.scrollTop){
-                    t = t + document.documentElement.scrollTop;
-                }
-               
-                //  console.log(l,t)
-
-                var maxL = $('.middlebox')[0].clientWidth - $('.filter')[0].offsetWidth;
-                var maxT = $('.middlebox')[0].clientHeight - $('.filter')[0].offsetHeight;
-                //边界处理
-                if (l > maxL) {
-                    l = maxL
-                } else if (l < 0) {
-                    l = 0
-                }
-                if (t > maxT) {
-                    t = maxT
-                } else if (t < 0) {
-                    t = 0
-                }
-
-                // 移动小盒子
-                $('.filter')[0].style.left = l + 'px'
-                $('.filter')[0].style.top = t + 'px'
-                // 移动大图片
-                $('.largebox').find('img')[0].style.left = -2 * l + 'px'
-                $('.largebox').find('img')[0].style.top = -2 * t + 'px'
-
-
-            }).mouseout(function () {
-                $('.largebox').hide();
-                $('.filter').hide();
-            })
-              
-
-
-
-     </script>
+     <script src="js/detail.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,116 @@
+
+
+
+{
+  "activity":  [
+      
+        {     
+            "tiltle" : "限时特卖",
+            "subtitle":"正品低价 必买清单",
+            "imglink":"http://www.sjgo365.com/Content/newhome/images/normalAct01.png"
+        },
+        
+        {
+            "tiltle":"新品首发",
+            "subtitle":"botanist植物学家白盖无硅油洗发水清爽型",
+            "imglink":"http://www.sjgo365.com/Content/newhome/images/normalAct03.png"
+        },
+        {
+            "tiltle":"镇店之宝",
+            "subtitle":" 薄如蝉翼的'膜'力",
+            "imglink":"http://www.sjgo365.com/Content/newhome/images/24554212.png"
+        },
+        {
+            "tiltle":"新会员首单福利",
+            "subtitle":"红包秒杀享不停",
+            "imglink":"http://www.sjgo365.com/Content/newhome/images/normalAct06.png"
+        }
+        
+    ]
+      ,
+
+     "mzg": [
+          {    
+              "id":1,
+              "imgsrc":"http://img.sjgo365.com/ProductImage450/29936286.jpg",
+              "text":"苏秘37度臻源之谜系列礼盒8件套 “魔法“修护套盒(臻源之谜肌底调理水150ml+臻源之谜肌底调理乳130ml+臻源之谜肌底调理凝润面霜20ml+臻源之谜肌底调理水20ml+臻源之谜肌底调理乳20ml+臻源之谜肌底调理凝润精华露8ml+奇迹护理精华露12ml+奇迹护理面膜27ml)",
+              "saleprice":1000,
+              "marketprice":1200,
+              "detailinfo":{
+                  
+              }
+          },
+          {
+            "id":2,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/22019431.jpg",
+            "text":"韩国whoo后拱辰享水沄系列礼6件套礼盒（水150ml+乳110ml+霜30ml+精华15ml+霜4ml+唇膏2g）",
+            "saleprice":1000,
+            "marketprice":1200
+          },
+          {  
+            "id":3,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/20384794.jpg",
+            "text":"苏秘37度晶透净肤气泡面膜100ml 呼吸泡泡面膜 氧气面膜 深层清洁补水保湿",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          {  
+            "id":4,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/23364949.jpg",
+            "text":"韩国whoo后拱辰享气韵生润颜洁面膏180ml",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          {
+            "id":5,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/24554212.jpg",
+            "text":"韩国JMsolution肌司研蜜莹润蜂胶面膜 10片（保税仓发货）",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          {
+            "id":6,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/22740937.jpg",
+            "text":"韩国VDL  贝壳提亮液30ml 原装进口(保税仓发货)",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          {  
+            "id":7,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/23548515.jpg",
+            "text":"KATE/凯朵 三色造型眉粉 EX-5（深棕色）防汗防水 不易晕染 初学者 画淡妆 适合橙色、棕色、棕红发色",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          {
+            "id":8,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/28772768.jpg",
+            "text":"KATE/凯朵 聚光焦点眼影盒 OR-1(橘光色) 少女桃花妆 防水不易晕染",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          { 
+            "id":9,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/29736602.jpg",
+            "text":"韩国HEELAA荷拉炫彩盈润口红RE10 3.5g(保税仓发货）",
+            "saleprice":1300,
+            "marketprice":1380
+          },
+          {
+            "id":10,
+            "imgsrc":"http://img.sjgo365.com/ProductImage450/28532005.jpg",
+            "text":"美国Metamucil美达施膳食纤维粉香橙味 425g【2罐起发】（保税仓发货）",
+            "saleprice":1300,
+            "marketprice":1380
+          }
+
+
+      ]
+
+
+    }
+       
+       
+    
+
+
